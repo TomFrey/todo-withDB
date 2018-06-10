@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">  <!-- wir überlassen dem user das er zoomen kann-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">   <!--ie soll immer mit der aktuellen rendering engine gerendert werden -->
+    <title>TODO App</title>
+
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <nav>
+            <ul>
+                <li><a href="api/logout.php">logout</a></li>
+                <li><a href="api/login.php">login</a></li>
+                <li><a href="">register</a></li>
+            </ul>
+        </nav>
+
+        <h1 class="wrapper__header">todos</h1>
+
+        <div class="todo">
+           <!-- <form action=""> -->
+                <input id="todo__input" class="todo__input" type="text" name="todo" id="todo" placeholder="What needs to be done?">
+
+                <ul id="todo__list" class="todo__list">
+                    <li class="todo__item-wrapper">
+                        <label class="todo__item">
+                            <div class="todo__checkbox-wrapper">
+                                <input class="todo__checkbox" type="checkbox">
+                            </div>
+                            <div class="todo__label" title="Falls ein langer Text vollständig angezeigt werden soll, ohne Punkte :-)">
+                                Falls ein langer Text vollständig angezeigt werden soll
+                            </div>
+                            <div class="todo__button-wrapper">
+                                <button class="todo__button"></button>
+                            </div>
+                        </label>
+                    </li>
+                    <li class="todo__item-wrapper">
+                        <label class="todo__item">
+                            <div class="todo__checkbox-wrapper">
+                                <input class="todo__checkbox" type="checkbox">
+                            </div>
+                            <div class="todo__label" title="Wasser">
+                                Wasser
+                            </div>
+                            <div class="todo__button-wrapper">
+                                <button class="todo__button"></button>
+                            </div>
+                        </label>
+                    </li>
+                    <li class="todo__item-wrapper">
+                        <label class="todo__item">
+                            <div class="todo__checkbox-wrapper">
+                                <input class="todo__checkbox" type="checkbox">
+                            </div>
+                            <div class="todo__label" title="Orangensaft">
+                                Orangensaft
+                            </div>
+                            <div class="todo__button-wrapper">
+                                <button class="todo__button"></button>
+                            </div>
+                        </label>
+                    </li>
+                </ul>
+          <!--  </form> -->
+        </div>
+
+        <div class="heap">
+            <div class="heap__item1"></div>
+            <div class="heap__item2"></div>
+        </div>
+    </div>
+
+    <script src="node_modules/todooo/todo.js"></script>
+    <script src="assets/js/ready.js"></script>
+    <script src="assets/js/storing.js"></script>
+    <script src="assets/js/rendering.js"></script>
+    <script src="assets/js/app.js"></script>
+
+
+</body>
+</html>

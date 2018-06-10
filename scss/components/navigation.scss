@@ -1,0 +1,18 @@
+nav{
+
+  ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+    li{
+      flex: 0 1 33%;
+      list-style: none;
+
+      a{
+        text-decoration: none;
+        color: rgb(0,0,0);
+      }
+    }
+  }
+}

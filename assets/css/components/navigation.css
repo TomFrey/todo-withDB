@@ -1,0 +1,10 @@
+nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center; }
+  nav ul li {
+    flex: 0 1 33%;
+    list-style: none; }
+    nav ul li a {
+      text-decoration: none;
+      color: black; }
